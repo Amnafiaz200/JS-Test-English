@@ -59,20 +59,22 @@
 // console.log(valueInBoolean5)    
 //Boolean conversion: 0, null, undefined, NaN, "" are false, rest all are true
 
-let score13= 123
-let valueInString= String(score13) //convert to string
-console.log(typeof valueInString)
-console.log(valueInString)
+// let score13= 123
+// let valueInString= String(score13) //convert to string
+// console.log(typeof valueInString)
+// console.log(valueInString)
 
-let score14= true
-let valueInString2= String(score14) //convert to string
-console.log(typeof valueInString2)
-console.log(valueInString2)
+// let score14= true
+// let valueInString2= String(score14) //convert to string
+// console.log(typeof valueInString2)
+// console.log(valueInString2)
 
-let score15= null
-let valueInString3= String(score15) //convert to string
-console.log(typeof valueInString3)
-console.log(valueInString3)
+// let score15= null
+// let valueInString3= String(score15) //convert to string
+// console.log(typeof valueInString3)
+// console.log(valueInString3)
+
+
 
 
 
