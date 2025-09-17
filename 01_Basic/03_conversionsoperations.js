@@ -74,7 +74,16 @@
 // console.log(typeof valueInString3)
 // console.log(valueInString3)
 
+                    //operation
 
+let value= 3
+let negValue= -value //unary operator
+console.log(negValue)
+
+let value2= 'amna'
+let value3= ' fiaz'
+let sum= value2 + value3 //binary operator
+console.log(sum)
 
 
 
