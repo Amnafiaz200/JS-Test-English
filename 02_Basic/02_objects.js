@@ -4,7 +4,7 @@
 let mysymbol = Symbol('key1');  //symbol is a unique and immutable data type, used as key in object
 // [] notation to access the vlaue of symbol in object
 
-//object literal
+//object literal //Singleton using object literal
 let obj1 = {                 // {} object
     name: 'Amna',   // key: value pairs
     age: 20,
