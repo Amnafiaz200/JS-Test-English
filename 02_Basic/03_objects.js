@@ -55,6 +55,30 @@ let users = [                         // [] aaray of objects {}
 // console.log(mergedObj.hasOwnProperty('a')); // true
 // console.log(mergedObj.hasOwnProperty('z')); // false
 
+//loop through object
+for (let key in mergedObj) {       // for...in loop to iterate over the keys of the object
+    // console.log(`Key: ${key}, Value: ${mergedObj[key]}`); // prints the key and value of each key-value pair in the object
+}
+
+//object methods
+// Object.keys() , Object.values(), Object.entries() are static methods, called on the Object class itself, not on an instance of the object
+
+console.log(user.keys()); // wrong, TypeError: user.keys is not a function
+console.log(Object.keys(user)); //works  bz its static method
+
+// Object.freeze() is used to freeze an object, makes it immutable, cannot add, delete or modify properties
+//once object is frozen, it cannot be unfrozen
+
+// Object.seal() is used to seal an object, cannot add or delete properties, but can modify existing properties
+Object.seal(mergedObj); // seals the object, makes it non-extensible, cannot add or delete properties
+
+
+mergedObj.a = '10'; // can change the value of existing key
+mergedObj.e = 'newValue'; // cannot add new key-value pair
+delete mergedObj.b; // cannot delete key-value pair
+
+// console.log(mergedObj); // prints the whole object, a is changed to 10, newKey is not added, b is not deleted
+
 
 
 
