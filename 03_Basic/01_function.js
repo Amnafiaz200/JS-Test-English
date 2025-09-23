@@ -70,8 +70,39 @@ function totalPrice(...items) {  // rest operator ...items collects all argument
 function totalPrice(num1, num2, ...items) { 
     return items; // returns array of items 
 }
-console.log(totalPrice(101, 20, 304,40,500)); // prints [304 40 500] rest operator must be last parameter
+// console.log(totalPrice(101, 20, 304,40,500)); // prints [304 40 500] rest operator must be last parameter
 
+//pass object in function
+let user = {
+    username: 'Amna', 
+    password: '12345'
+};
+
+function userDetails(obj) {  // obj is parameter that will receive the user object
+    return `Username is ${obj.username} and password is ${obj.password}`; // access object properties
+}
+// console.log(userDetails(user)); // prints Username is Amna and password is 12345
+
+//direct pass the object in function call
+ // console.log(userDetails({
+//     username: 'Ali', 
+//     password: '54321'
+// })); // prints Username is Ali and password is 54321
+
+let myarray = [1,2,3,4,5];
+
+function sumArray(arr) { // arr is parameter that will receive the array
+    return arr.reduce((acc, curr) => acc + curr, 0); // sum all elements in array
+}
+// .reduce() is folding your array into a single value, step by step, .reduce() is a built-in array method in JavaScript.
+//acc is accumulator that holds the sum, curr is current element
+//at start acc is 0, then for each element in array, add it to acc and return acc
+console.log(sumArray(myarray)); // prints 15
+
+//direct pass the array in function call
+console.log(sumArray([10,20,30,40,50])); // prints 150
+
+//function scope, global scope, local scope
 
 
 
