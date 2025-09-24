@@ -69,18 +69,36 @@ function one() {
       console.log(name1); // prints 'I am Amna', child scope can access parent scope variables
    }
    // console.log(name2); ReferenceError: name2 is not defined, parent scope cannot access child scope variables
-   two(); 
+   // two(); //if two is not called here, it will not execute, so name2 will not be printed
 }
 // console.log(one()); // undefined, parent function does not return anything
 // two(); // ReferenceError:child function is not accessible outside parent function
-one(); // calling parent function, which in turn calls child function
+// one(); // calling parent function, which in turn calls child function
 
 // call one ==> call two ==> print name2 ==> print name1 ==> return to one ==> return to global scope
 
+//closure: a function along with its lexical scope, even when the function is executed outside that scope
+//inner function has access to outer function's variables even after outer function has returned
 
 
+//function hold by variable in closure
+let myname = function outer(name) {   //this function is also called IIFE (immediately invoked function expression) or expression function
+   return name + 'fiaz'
+}
 
+// console.log(myname('Amna ')); // prints 'Amna fiaz'
 
+// we can call function before its declaration, because of hoisting
+// console.log(myname2('Ali ')); // prints 'Ali fiaz'
+function myname2(name) {     // function declaration
+   return name + 'fiaz'
+}
+// but we cannot call function expression(function in variable) before its declaration
+// console.log(myname3('Aisha ')); // ReferenceError: Cannot access 'myname3' before initialization
+let myname3 = function (name) {   //function expression
+   return name + 'fiaz'
+}
+// Hoisting allows to use,or call functions and variables before they are declared in code. 
 
 
 
