@@ -1,5 +1,5 @@
 // we want function that executed immediately
-//use iife, immeriately invoked function expresssion
+//use iife, immediately invoked function expression
 
 // function name(){
 //     console.log('Amna');  // normal way
