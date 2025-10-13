@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai piyo or code karo</title>
+</head>
+<body style= "background-color:black; color: white">
+<!-- // class name should be one word -->
+    <ul class="add_lang">  
+        <li>
+            Javascript 
+        </li>
+    </ul>
+
+</body>
+<script>
+    function addlanguage (add_it){   // 'li' is a tag and li1 is variable
+        const li1 = document.createElement('li');
+        li1.innerHTML = `${add_it}`  // is me add kya karna
+        document.querySelector('.add_lang').appendChild(li1)     
+        // is ko class se attach kar ke phir is me append karna ha
+ // firstly, make function , create element in li(tag), put it into variable, add what to add , then attach to class of list
+    }
+addlanguage ('python')
+addlanguage ('dom')
+// more optimized way:
+  function addlanguage (add_it){   
+         const li1 = document.createElement('li'); 
+         li1.appendChild(document.createTextNode(add_it))
+        document.querySelector('.add_lang').appendChild(li1)  
+  }
+addlanguage ('hello')
+     
+
+</script>
+</html>

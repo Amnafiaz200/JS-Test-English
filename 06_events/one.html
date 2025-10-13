@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>code or code</h1>
+   <button id = 'start'>start</button>
+   <button id = 'stop'>stop</button>
+</body>
+<script>
+        let seconds = 0;
+
+// Start counting every second
+let intervalId = setInterval(() => {
+    seconds++;
+    console.log(`${seconds} seconds passed`);
+    
+    if (seconds > 9) {
+    clearInterval(intervalId);
+    console.log("Timer stopped");
+  }
+}, 1000);
+
+// Stop after 5 seconds using setTimeout + clearInterval
+// let stop_time = setTimeout(() => {
+//   clearInterval(intervalId);
+//   console.log("Timer stopped after 5 seconds");
+// }, 5000);
+
+// let stop_time = setTimeout(intervalId, 5000)
+</script>
+</html>

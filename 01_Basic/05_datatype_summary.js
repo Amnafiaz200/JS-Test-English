@@ -32,11 +32,11 @@ let user1={
     name :"Amna",
     rollNo :234
 }
-let user1 = user2   // error
-let user2 = user1
+// let user1 = user2   // error
+// let user2 = user1
 
-let user2.rollNo = 555   // error, user2 already declared 
-user2.rollNo = 555
+// let user2.rollNo = 555   // error, user2 already declared 
+// user2.rollNo = 555
 // console.log(user1)   // both will get rollNo = 555
 // console.log(user2)
 

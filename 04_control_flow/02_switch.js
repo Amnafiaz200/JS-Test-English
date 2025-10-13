@@ -1,4 +1,4 @@
-//check value by multiple conditions easily
+// check value by multiple conditions easily
 // switch case use in redux
 // switch (key) {
 //     case value:                //syntax
